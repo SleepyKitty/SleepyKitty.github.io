@@ -1,3 +1,32 @@
+@font-face {
+  font-family: "Lato Regular";
+  font-weight: 400;
+  src: url("../fonts/Lato-Reg.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato Bold";
+  font-weight: 700;
+  src: url("../fonts/Lato-Bol.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato Light";
+  font-weight: 300;
+  src: url("../fonts/Lato-Lig.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato Hairline";
+  src: url("../fonts/Lato-Hai.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato Hairline Italic";
+  font-style: italic;
+  src: url("../fonts/Lato-HaiIta.ttf") format("truetype");
+}
+
 html {
   box-sizing: border-box;
 }
@@ -9,241 +38,362 @@ html {
 }
 
 body {
-  font-family: Tahoma, serif;
-  font-size: 16px;
+  min-width: 1180px;
+  width: 100%;
   color: #000000;
   background-color: #ffffff;
-  min-width: 1170px;
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: #000000;
+  font-family: "Lato Regular", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .container {
-  width: 1170px;
+  width: 1180px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
-.header {
-  min-height: 90px;
+.main-section {
+  height: 880px;
+  background: #b89f83 url("../img/splash-image.jpg") no-repeat center;
 }
 
-.logo {
-  vertical-align: middle;
-  display: inline-block;
-}
-
-.navigation {
-  display: inline-block;
-  margin-left: 270px;
-}
-
-.navigation-list {
+.menu {
   display: flex;
-  list-style: none;
+  justify-content: space-between;
+  min-height: 115px;
+  align-items: center;
+}
+
+.menu__logo {
+  display: block;
+}
+
+.menu__list {
+  display: flex;
+  margin: 0;
   padding: 0;
-  margin: 30px 0 0;
+  list-style: none;
 }
 
-.navigation__item {
-  margin-right: 35px;
-}
-
-.navigation__item:last-child {
-  margin-right: 0;
-}
-
-.navigation__link {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.navigation__link:hover {
-  color: #8a8a8a;
-}
-
-.presetation__lead {
-  height: 844px;
-  background: #ffffff url("../img/leading.jpg") no-repeat center;
-  display: flex;
-  align-items: center;
-}
-
-.presentation__text {
-  padding: 22px 107px;
-  background-color: #ffffff;
-  margin: 0 auto;
-  max-width: 515px;
-}
-
-.presentation__calendar {
-  background-color: #555555;
-  min-height: 100px;
-  color: #f1eded;
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.presentation__wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100px;
-}
-
-.presentation__event {
-  margin-right: 105px;
-}
-
-.presentation__event:last-child {
-  margin-right: 0;
-}
-
-.presentation__dummy {
-  font-size: 14px;
-  font-weight: 400;
-  display: inline-block;
-  padding: 14px 0 14px 14px;
-  background-color: #9c9593;
-  position: relative;
+.menu__item {
   margin-right: 30px;
 }
 
-.presentation__dummy:after {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border-top: 22px solid transparent;
-  border-left: 15px solid #9c9593;
-  border-bottom: 22px solid transparent;
-  top: 0;
+.menu__item:last-child {
+  margin-right: 0;
 }
 
-.about {
-  margin-top: 50px;
-}
-
-.about__lead {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 700;
-  color: #151617;
-  text-align: center;
-  width: 570px;
-  margin: 0 auto;
-}
-
-.about__us {
-  margin-top: 60px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.about__text {
+.menu__link {
+  font-family: "Lato Bold", sans-serif;
   font-size: 14px;
-  line-height: 21px;
-  width: 470px;
-  text-align: justify;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
 }
 
-.about__image {
+.welcome {
+  margin-top: 235px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.welcome__greeting {
+  font-family: "Times New Roman", serif;
+  font-size: 36px;
+  font-weight: 700;
+  font-style: italic;
+  opacity: 0.7;
+  text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
+}
+
+.welcome__heading {
+  font-family: "Lato Bold", sans-serif;
+  font-size: 100px;
+  line-height: 1;
+  text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
+  letter-spacing: 5px;
+  margin: 20px 0 40px;
+}
+
+.welcome__get-started {
+  font-family: "Lato Bold", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px 70px 25px;
+  border: 3px solid #ffffff;
+  display: inline-block;
+}
+
+.welcome__promo {
+  font-size: 14px;
+  line-height: 30px;
+  text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
+  text-transform: uppercase;
+  letter-spacing: 1px;
   margin-top: 35px;
 }
 
-.services {
-  margin-top: 40px;
+.welcome__promo--bolder {
+  font-family: "Lato Bold", sans-serif;
+  text-decoration: underline;
 }
 
-.service {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.service__item {
-  text-align: center;
-  width: 360px;
-}
-
-.service__lead {
-  font-size: 13px;
-  font-weight: 700;
-  margin: 20px 0 12px;
-}
-
-.service__text {
-  font-size: 12px;
-  line-height: 21px;
-  text-align: justify;
+.features-section {
+  margin-top: 90px;
 }
 
 .features {
-  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .feature {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+  width: 360px;
 }
 
-.feature:nth-child(2) {
-  flex-direction: row-reverse;
+.feature__heading {
+  font-family: "Lato Bold", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
 }
 
-.feature__side {
-  flex-grow: 0;
-  width: 280px;
-  margin-left: 30px;
-}
-
-.feature__side:nth-child(2) {
-  margin-right: 30px;
-}
-
-.feature__lead {
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 700;
+.feature__heading:after {
+  content: '';
+  position: absolute;
+  width: 88px;
+  height: 1px;
+  background-color: #f57365;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .feature__text {
-  font-size: 13px;
-  line-height: 20px;
-  text-align: justify;
+  font-family: "Lato Light", sans-serif;
+  letter-spacing: 1px;
+  margin-top: 18px;
 }
 
-.image__wrap {
+.introducing-section {
+  margin-top: 90px;
+  padding-top: 100px;
+  background-color: #f7f7f7;
+}
+
+.introducing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.introducing__app {
+  width: 540px;
+  margin-top: 70px;
+}
+
+.introducing__heading {
+  font-family: "Lato Bold", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 1px;
   position: relative;
+}
+
+.introducing__heading:after {
+  content: '';
+  position: absolute;
+  width: 88px;
+  height: 1px;
+  background-color: #f57365;
+  bottom: -4px;
+  left: 0;
+}
+
+.introducing__text {
+  font-family: "Lato Light", sans-serif;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+
+.introducing__store {
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.slider-section {
+  height: 460px;
+  color: #ffffff;
+  background-color: #4a3949;
+}
+
+.slider {
+  height: 460px;
+  background-size: 990px 460px;
+  background: url("../img/slider-bg.png") no-repeat bottom right;
+}
+
+.slide {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.slide__avatar {
+  border: 5px solid rgba(255, 255, 255, 0.4);
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.quote {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  opacity: 0.4;
+}
+
+.quote__text {
+  font-family: "Lato Hairline", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 0;
+}
+
+.quote__author {
+  font-family: "Lato Hairline Italic", sans-serif;
+  font-size: 18px;
+}
+
+.cuisine-section {
+  margin-top: 90px;
+  overflow: hidden;
+}
+
+.cuisine__heading {
+  font-family: "Lato Bold", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cuisine__heading:after {
+  content: '';
+  position: absolute;
+  width: 88px;
+  height: 1px;
+  background-color: #f57365;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cuisine {
   display: flex;
   justify-content: center;
 }
 
-.image__wrap:after {
-  content: 'Scelerisque';
+.cuisine__food {
+  position: relative;
+  box-shadow: inset 0 0 68px rgba(0, 0, 0, 0.31);
+}
+
+.cuisine__image {
+  display: block;
+}
+
+.cuisine__desc {
   position: absolute;
-  font-size: 17px;
-  line-height: 27px;
-  font-weight: 700;
-  color: #2a2c2c;
-  padding: 10px 35px;
-  background-color: #ffffff;
-  top: 120px;
-}
-
-.footer {
-  background-color: #555555;
-  margin-top: 25px;
-  text-align: center;
-  padding: 80px 0;
-}
-
-.contact {
-  line-height: 27px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #ffffff;
+  text-align: center;
+}
+
+.cuisine__recipe {
+  font-family: "Times New Roman", serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-style: italic;
+  text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
+  opacity: 0.9;
+}
+
+.cuisine__kitchen {
+  font-family: "Lato Bold", sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.stats {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.stats__container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.stats__number {
+  font-family: "Lato Bold", sans-serif;
+  font-size: 36px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+.stats__text {
+  letter-spacing: 1px;
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+.footer-section {
+  background-color: #f7f7f7;
+  height: 95px;
+  border-top: 1px solid #e2e2e2;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  min-height: 95px;
+  align-items: center;
+}
+
+.copyright__rights {
+  font-family: "Lato Light", sans-serif;
+  font-size: 14px;
+  color: #8b8b8b;
+  opacity: 0.5;
+}
+
+.copyright__studio {
+  font-family: "Lato Light", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #8b8b8b;
+  letter-spacing: 3px;
+}
+
+.copyright__studio--link {
+  font-family: "Lato Regular", sans-serif;
+  color: #000000;
+  text-decoration: none;
 }
