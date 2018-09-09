@@ -397,3 +397,60 @@ body {
   color: #000000;
   text-decoration: none;
 }
+
+@media (max-width: 640px) {
+  
+  body {
+    min-width: auto;
+  }
+  
+  .container {
+    width: 640px;
+    margin: 0 auto;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .welcome {
+    margin-top: 0;
+    padding-top: 400px;
+  }
+  
+  .main-section {
+    width: 640px;
+    background-position: 30% top;
+  }
+  
+  .introducing-section,
+  .slider-section,
+  .stats,
+  .footer-section {
+    display: none;
+  }
+  
+  .features-section {
+    width: 640px;
+  }
+  
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cuisine-section {
+    width: 640px;
+    overflow: auto;
+  }
+  
+  .cuisine {
+    width: 640px;
+    flex-wrap: wrap;
+  }
+  
+  .cuisine__food {
+    width: 320px;
+    
+  }
+}
