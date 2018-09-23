@@ -3,232 +3,338 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Fudi</title>
+  <title>placeholder</title>
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,400i,600|Ovo" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="main-section">
+<div class="header">
+  <div class="menu">
+    <div class="menu__burger">
+      <span class="menu__burger-line"></span>
+      <span class="menu__burger-line"></span>
+      <span class="menu__burger-line"></span>
+    </div>
+    <ul class="menu__list">
+      <li class="menu__item"><a href="#categories-section" class="menu__link">Categories</a></li>
+      <li class="menu__item"><a href="#sales" class="menu__link">Sales</a></li>
+      <li class="menu__item"><a href="#special-offer" class="menu__link">Special Offer</a></li>
+      <li class="menu__item"><a href="#bestsellers" class="menu__link">Bestsellers</a></li>
+      <li class="menu__item"><a href="#workers" class="menu__link">Our Workers</a></li>
+      <li class="menu__item"><a href="#presentation" class="menu__link">Presentation</a></li>
+      <li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
+    </ul>
+  </div>
+  <div class="logo">
+    <img src="img/logo.png" alt="Family Farms Logo" width="129" height="129">
+  </div>
+  <div class="search">
+    <label class="search__label">
+      <input type="text" class="search__input" placeholder="search...">
+      <img src="img/search.png" class="search__icon" alt="search button" width="16" height="16">
+    </label>
+  </div>
+</div>
+
+<div class="hero-section">
   <div class="container">
-    <header class="menu">
-      <a href="#" class="menu__logo">
-        <img src="img/logo.png" alt="Fudi Recipes" width="68" height="57">
-      </a>
-      <nav class="menu__navigation">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="#" class="menu__link">Log In</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Sign Up</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">|||</a>
-          </li>
+    <div class="hero">
+      <h1 class="hero__heading">Family Farms</h1>
+      <p class="hero__lead">
+        Our farming business was founded in 1969. Three generations have managed and developed this business. We proud
+        of our products quality as well as our customers. Welcome you to family farms!
+      </p>
+      <a href="#" class="btn">Explore</a>
+    </div>
+  </div>
+</div>
+
+<div class="categories-section" id="categories-section">
+  <div class="container">
+    <div class="categories">
+      <div class="category category--vegetables">
+        <h2 class="category__name">Vegetables</h2>
+      </div>
+      <div class="category category--fruit">
+        <h2 class="category__name">Fruit</h2>
+      </div>
+      <div class="category category--meat">
+        <h2 class="category__name">Meat</h2>
+      </div>
+    </div>
+    <a href="#" class="btn btn--black">View all categories</a>
+  </div>
+</div>
+
+<div class="sales-section" id="sales">
+  <div class="container clearfix">
+    <div class="sales">
+      <h2 class="sales__heading">Season honey sales!</h2>
+      <p class="sales__lead">
+        It’s honey season now. Treat youself with delicious honey from our apiaries. Honey contains numerous vitamins
+        and valuable for our health things. So don’t wait and order honey from Family Farms.
+      </p>
+      <a href="#" class="btn">Order Now</a>
+    </div>
+  </div>
+</div>
+
+<div class="special-section" id="special-offer">
+  <div class="container">
+    <div class="special">
+      <h2 class="special__heading">
+        Special offer:<br>
+        Food basket for $34.99
+      </h2>
+      <p class="special__lead">
+        We will send a huge basket full of fruit and vegetables to your doorstep every week. Our specialists will select
+        the best from seasonal fruit and vegetables to you. Sign up this offer available now.
+      </p>
+      <div class="special__link"><a href="#" class="btn">Sign Up</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="bestsellers-section" id="bestsellers">
+  <div class="container">
+    <h2 class="bestsellers__heading">Bestsellers</h2>
+    <div class="bestsellers">
+      <div class="bestseller">
+        <div class="bestseller__image">
+          <img src="img/bestseller-1.jpg" alt="Peaches" width="263" height="255">
+        </div>
+        <div class="bestseller__item">
+          <h3 class="bestseller__product">Peaches</h3>
+          <span class="bestseller__price">$1.29 per pound</span>
+        </div>
+      </div>
+      <div class="bestseller">
+        <div class="bestseller__image">
+          <img src="img/bestseller-2.jpg" alt="Bell pepper" width="262" height="255">
+        </div>
+        <div class="bestseller__item">
+          <h3 class="bestseller__product">Bell pepper</h3>
+          <span class="bestseller__price">$2.19 per pound</span>
+        </div>
+      </div>
+      <div class="bestseller">
+        <div class="bestseller__image">
+          <img src="img/bestseller-3.jpg" alt="Cucumbers" width="263" height="255">
+        </div>
+        <div class="bestseller__item">
+          <h3 class="bestseller__product">Cucumbers</h3>
+          <span class="bestseller__price">$0.99 per pound</span>
+        </div>
+      </div>
+      <div class="bestseller">
+        <div class="bestseller__image">
+          <img src="img/bestseller-4.jpg" alt="Blueberries" width="262" height="255">
+        </div>
+        <div class="bestseller__item">
+          <h3 class="bestseller__product">Blueberries</h3>
+          <span class="bestseller__price">$3.49 per pound</span>
+        </div>
+      </div>
+    </div>
+    <div class="bestsellers__link"><a href="#" class="btn btn--black btn--wide">Shop more</a></div>
+  </div>
+</div>
+
+<div class="process-section">
+  <div class="container">
+    <div class="process">
+      <div class="process__image">
+        <img src="img/process-bg.jpg" alt="Process" width="700" height="1000">
+      </div>
+      <div class="process__descr">
+        <h3 class="process__heading">The Process</h3>
+        <p class="process__lead">
+          Here at Family Farms we know how to grow the best quality food with less usage of chemicals.
+        </p>
+        <ul class="process__list">
+          <li class="process__item process__item--seeds">High quality seeds</li>
+          <li class="process__item process__item--weather">Comfortable weather</li>
+          <li class="process__item process__item--water-system">Water sprinkler system</li>
+          <li class="process__item process__item--hard-work">Hard work</li>
         </ul>
-      </nav>
-    </header>
-    <div class="welcome">
-      <span class="welcome__greeting">Find your Favorite</span>
-      <h1 class="welcome__heading">RECIPES</h1>
-      <a href="#" class="welcome__get-started">Get started</a>
-      <p class="welcome__promo">or send us your own recipes and <span class="welcome__promo--bolder">get rewarded!</span></p>
-    </div>
-  </div>
-</div>
-
-<div class="features-section">
-  <div class="container">
-    <div class="features">
-      <div class="feature">
-        <img src="img/service-1.png" alt="Service #1" class="service__icon" width="107" height="107">
-        <h2 class="feature__heading">Get inspired</h2>
-        <p class="feature__text">
-          Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam
-          erat volutpat.
-        </p>
-      </div>
-      <div class="feature">
-        <img src="img/service-2.png" alt="Service #2" class="service__icon" width="107" height="107">
-        <h2 class="feature__heading">Get rewarded</h2>
-        <p class="feature__text">
-          Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam
-          erat volutpat.
-        </p>
-      </div>
-      <div class="feature">
-        <img src="img/service-3.png" alt="Service #3" class="service__icon" width="107" height="107">
-        <h2 class="feature__heading">Get social</h2>
-        <p class="feature__text">
-          Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam
-          erat volutpat.
-        </p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="introducing-section">
+<div class="workers-section" id="workers">
   <div class="container">
-    <div class="introducing">
-      <img src="img/iphone.png" alt="Iphone 5S" class="introducing__image" width="523" height="777">
-      <div class="introducing__app">
-        <h2 class="introducing__heading">INTRODUCING THE FUDI APP</h2>
-        <p class="introducing__text">
-          Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet felis sit amet diam mollis
-          ullamcorper. Nullam consequat sem a ante vest ibulum tristique. Suspendisse tristique lacus ac mattis porta.
-        </p>
-        <p class="introducing__text">
-          Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In libero dui, eleifend eu nisi
-          id, egestas fringilla odio. In varius quam a mas sa hendrerit ullamcorper a eu justo. Suspendisse porta
-          mattis convallis. Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan.
-        </p>
-        <p class="introducing__text">
-          Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam malesuada. Duis vehicula a nibh id
-          hendrerit. Donec sit amet ultrices ante, a mattis massa.
-        </p>
-        <a href="#" class="introducing__store">
-          <img src="img/appstore.png" alt="AppStore" width="112" height="39">
-        </a>
-        <a href="#" class="introducing__store">
-          <img src="img/gplay.png" alt="Google Play" width="120" height="39">
-        </a>
+    <h2 class="workers__heading">Meet our workers</h2>
+    <p class="workers__lead">
+      Family Farms proud of every each individual whitch works in here.
+    </p>
+    <div class="workers">
+      <div class="worker">
+        <img src="img/workers-3.jpg" alt="worker #3" width="360" height="250">
+      </div>
+      <div class="worker">
+        <img src="img/workers-1.jpg" alt="worker #3" width="555" height="250">
+        <div class="worker__about worker__about--left">
+          <h3 class="worker__name">David Johnson</h3>
+          <a href="#" class="worker__story">Read the story</a>
+        </div>
+      </div>
+      <div class="worker">
+        <img src="img/workers-2.jpg" alt="worker #3" width="555" height="250">
+        <div class="worker__about worker__about--right">
+          <h3 class="worker__name">Andy Westchester</h3>
+          <a href="#" class="worker__story">Read the story</a>
+        </div>
+      </div>
+      <div class="worker">
+        <img src="img/workers-4.jpg" alt="worker #3" width="360" height="250">
       </div>
     </div>
   </div>
 </div>
 
-<div class="slider-section">
+<div class="clients-section">
   <div class="container">
-    <div class="slider">
-      <div class="slide">
-        <img src="img/slider-face.png" alt="" class="slide__avatar" width="104" height="103">
-        <div class="slide__quote quote">
-          <blockquote class="quote__text">
-            “I am so happy because I found this recipe, and it just made my life easier. Thanks so much for sharing!”
-          </blockquote>
-          <cite class="quote__author">- Michael Dawson, San Francisco, CA -</cite>
-        </div>
+    <h2 class="clients__heading">What our clients say</h2>
+    <div class="clients">
+      <div class="client">
+        <p class="client__quote">
+          “Family Farms is the best place where I can buy fruit, vegetables, meat, honey, milk, eggs and so on for my
+          restaurant directly from supplier. Super convinient. Thank you”
+        </p>
+        <p class="client__about">
+          <span class="client__name">
+            Jeff Handerson</span>,<br>
+            restaurant owner
+        </p>
+        <div class="client--jeff"></div>
+      </div>
+      <div class="client">
+        <p class="client__quote">
+          “Delivery is very helpful. I always order friuts from Family Farms to my home. They are great people, I love
+          to use their services”
+        </p>
+        <p class="client__about">
+          <span class="client__name">
+            Anne Dawson</span>,<br>
+            businessman
+        </p>
+        <div class="client--anne"></div>
+      </div>
+      <div class="client">
+        <p class="client__quote">
+          “I like coocking especially meat. I bought a lot of it from Family Farms. Their meat quality is excellent. Try
+          it by youself, you won’t regret”
+        </p>
+        <p class="client__about">
+          <span class="client__name">
+            Jane Smith</span>,<br>
+            actress
+        </p>
+        <div class="client--jane"></div>
+      </div>
+    </div>
+    <div class="clients__link"><a href="#" class="btn btn--black btn--wide">Read more</a></div>
+  </div>
+</div>
+
+<div class="partners-section">
+  <div class="container">
+    <h2 class="partners__heading">Family Farms partners</h2>
+    <ul class="partners">
+      <li class="partner">
+        <a href="#"><img src="img/partner-1.png" alt="barbecue" width="127" height="112"></a>
+      </li>
+      <li class="partner">
+        <a href="#"><img src="img/partner-2.png" alt="coffee bar" width="116" height="104"></a>
+      </li>
+      <li class="partner">
+        <a href="#"><img src="img/partner-3.png" alt="restaurant" width="102" height="102"></a>
+      </li>
+      <li class="partner">
+        <a href="#"><img src="img/partner-4.png" alt="good food" width="96" height="105"></a>
+      </li>
+      <li class="partner">
+        <a href="#"><img src="img/partner-5.png" alt="restaurant good food" width="122" height="75"></a>
+      </li>
+      <li class="partner">
+        <a href="#"><img src="img/partner-6.png" alt="restaurant #3" width="108" height="102"></a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="video-section" id="presentation">
+  <h2 class="video__heading">Still have questions?</h2>
+  <p class="video__lead">Watch the vieo about Family Farms</p>
+  <div class="video">
+    <iframe width="740" height="640" src="https://www.youtube.com/embed/sL6_UPnZKv0" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="contacts-section" id="contacts">
+  <h2 class="find-us">How to find us</h2>
+  <div class="contacts">
+    <div class="container clearfix">
+      <div class="address">
+        <h3 class="contacts__heading">Contacts</h3>
+        <table class="contact">
+          <tr>
+            <td>Address:</td>
+            <td>Florida, Jacksonville, 1324 Boundary Street</td>
+          </tr>
+          <tr>
+            <td>Phone:</td>
+            <td>904-595-7700</td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td>familyfarmsltd@mail.com</td>
+          </tr>
+          <tr>
+            <td>Skype:</td>
+            <td>family_farms_ltd</td>
+          </tr>
+        </table>
       </div>
     </div>
   </div>
 </div>
 
-<div class="cuisine-section">
+<div class="buy-section">
   <div class="container">
-    <h2 class="cuisine__heading">BROWSE BY CUISINES</h2>
-    <div class="cuisine">
-      <div class="cuisine__food">
-        <img src="img/food-7.png" class="cuisine__image" alt="Italian" width="320" height="225">
-        <div class="cuisine__desc">
-          <span class="cuisine__recipe">327 Recipes</span>
-          <h2 class="cuisine__kitchen">Italian</h2>
-        </div>
-      </div>
-      <div class="cuisine__food">
-        <img src="img/food-1.jpg" class="cuisine__image" alt="Indian" width="320" height="225">
-        <div class="cuisine__desc">
-          <span class="cuisine__recipe">856 Recipes</span>
-          <h2 class="cuisine__kitchen">INDIAN</h2>
-        </div>
-      </div>
-      <div class="cuisine__food">
-        <img src="img/food-2.png" class="cuisine__image" alt="French" width="320" height="225">
-        <div class="cuisine__desc">
-          <span class="cuisine__recipe">27 Recipes</span>
-          <h2 class="cuisine__kitchen">French</h2>
-        </div>
-      </div>
-      <div class="cuisine__food">
-        <img src="img/food-3.png" class="cuisine__image" alt="Steackhouse" width="320" height="225">
-        <div class="cuisine__desc">
-          <span class="cuisine__recipe">174 Recipes</span>
-          <h2 class="cuisine__kitchen">Steackhouse</h2>
-        </div>
-      </div>
-      <div class="cuisine__food">
-        <img src="img/food-8.png" class="cuisine__image" alt="Seafood" width="320" height="225">
-        <div class="cuisine__desc">
-          <span class="cuisine__recipe">731 Recipes</span>
-          <h2 class="cuisine__kitchen">Seafood</h2>
-        </div>
-      </div>
-    </div>
-    <div class="cuisine">
-      <div class="cuisine__food">
-        <img src="img/food-9.png" class="cuisine__image" alt="Sushi" width="320" height="225">
-        <div class="cuisine__desc">
-          <span class="cuisine__recipe">237 Recipes</span>
-          <h2 class="cuisine__kitchen">Sushi</h2>
-        </div>
-      </div>
-      <div class="cuisine__food">
-        <img src="img/food-4.png" class="cuisine__image" alt="Mexican" width="320" height="225">
-        <div class="cuisine__desc">
-          <span class="cuisine__recipe">529 Recipes</span>
-          <h2 class="cuisine__kitchen">Mexican</h2>
-        </div>
-      </div>
-      <div class="cuisine__food">
-        <img src="img/food-5.png" class="cuisine__image" alt="Chinese" width="320" height="225">
-        <div class="cuisine__desc">
-          <span class="cuisine__recipe">145 Recipes</span>
-          <h2 class="cuisine__kitchen">Chinese</h2>
-        </div>
-      </div>
-      <div class="cuisine__food">
-        <img src="img/food-6.png" class="cuisine__image" alt="Pizza" width="320" height="225">
-        <div class="cuisine__desc">
-          <span class="cuisine__recipe">327 Recipes</span>
-          <h2 class="cuisine__kitchen">Pizza</h2>
-        </div>
-      </div>
-      <div class="cuisine__food">
-        <img src="img/food-10.png" class="cuisine__image" alt="American" width="320" height="225">
-        <div class="cuisine__desc">
-          <span class="cuisine__recipe">1.437 Recipes</span>
-          <h2 class="cuisine__kitchen">American</h2>
-        </div>
-      </div>
-    </div>
-    <div class="stats">
-      <dl class="stats__container">
-        <div class="stats__row">
-          <dt class="stats__number">23,567</dt>
-          <dd class="stats__text">Recipes Available</dd>
-        </div>
-        <div class="stats__row">
-          <dt class="stats__number">431,729</dt>
-          <dd class="stats__text">Active Users</dd>
-        </div>
-        <div class="stats__row">
-          <dt class="stats__number">892,173</dt>
-          <dd class="stats__text">Positive Reviews</dd>
-        </div>
-        <div class="stats__row">
-          <dt class="stats__number">56,581</dt>
-          <dd class="stats__text">Photos & Videos</dd>
-        </div>
-        <div class="stats__row">
-          <dt class="stats__number">3,182</dt>
-          <dd class="stats__text">Spices and Herbs</dd>
-        </div>
-      </dl>
+    <div class="buy">
+      <span class="buy__lead">Buy the best</span>
+      <a href="#" class="btn btn--big">Now</a>
     </div>
   </div>
 </div>
 
 <div class="footer-section">
   <div class="container">
-    <footer class="copyright">
-      <p class="copyright__rights">&copy;2014 Fudi. All Rights Reserved.</p>
-      <p class="copyright__studio">
-        design by: <a href="#" class="copyright__studio--link">www.bekades.com</a>
+    <div class="footer">
+      <p class="footer__logo">
+        Family<br>
+        Farms
       </p>
-    </footer>
+      <div class="footer__address">
+        <p class="footer__location">
+          <span class="address__heading">Address</span>
+          <span class="address__text">
+            Florida, Jacksonville,<br>
+            1324 Boundary Street
+          </span>
+        </p>
+      </div>
+      <div class="footer__link"><a href="#" class="btn">Contact Now</a></div>
+    </div>
   </div>
 </div>
 
+
+<script src="js/main.js"></script>
 </body>
 </html>
