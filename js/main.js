@@ -1,11 +1,9 @@
-'use strict';
-
-let burger = document.querySelector('.menu__burger');
-let menuList = document.querySelector('.menu__list');
-let header = document.querySelector('.header');
-let search = document.querySelector('.search__icon');
-let input = document.querySelector('.search__input');
-let anchor = document.querySelectorAll('a[href^="#"]');
+var burger = document.querySelector('.menu__burger');
+var menuList = document.querySelector('.menu__list');
+var header = document.querySelector('.header');
+var search = document.querySelector('.search__icon');
+var input = document.querySelector('.search__input');
+var anchor = document.querySelectorAll('a[href^="#"]');
 
 burger.addEventListener('click', function (evt) {
   evt.preventDefault();
